@@ -105,7 +105,7 @@ $context = stream_context_create(array(
 											"employees": 2
 										}
 									]
-								}'),
+								}',
             )
         )
     )
