@@ -285,6 +285,9 @@ $(document).ready(function(){
 
 <button>Send an HTTP POST request to a page and get the result back</button>
 <?php echo($resp); ?>
+<?php
+echo "Hello world!";
+?>
 </body>
 </html>
 
