@@ -4,50 +4,150 @@
 <?php header('Access-Control-Allow-Origin: *');?>
 <?php header('Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS');?>
 <?php header('Access-Control-Allow-Headers: Origin, Content-Type, Authorization ,X-Auth-Token');?>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>jQuery AJAX POST Form</title>
-    <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.post("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv",
+        {
+            Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJYOEF3R2dQNURqdFZLZWpvQ2JxRWZhSXYiLCJpYXQiOjE1MjgyNzE1NTAsImV4cCI6MTY4NTk1MTU1MCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJvZXUwTmMyaUFqWVoiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.gV3H5CJehqSf_Dk4SRYgOebRmMsYiK3XCVC7tozJX5uOX_F1PdWNBq-Z2R-Bz-D6yTb1MsEEz8U3ok-nbl9cDg",
+            data : {
+  "data":[
+    {
+      "id":"Primary",
+      "type":"json",
+      "jsonData":
+		{
+		  "2015": {
+			"Revenue": [
+			  {
+				"name": "Premium Income",
+				"value": "21543"
+			  },
+			  {
+				"name": "Net investment income",
+				"value": "6387"
+			  },
+			  {
+				"name": "Fees and other income",
+				"value": "797"
+			  }
+			],
+			"Expenses": [
+			  {
+				"name": "Policyholders' benefits",
+				"value": "16300"
+			  },
+			  {
+				"name": "Change in policyholders' reserves",
+				"value": "8592"
+			  },
+			  {
+				"name": "Change in group annuity reserves assumed",
+				"value": "-942"
+			  },
+			  {
+				"name": "General insurance expenses",
+				"value": "1793"
+			  },
+			  {
+				"name": "Commissions",
+				"value": "869"
+			  },
+			  {
+				"name": "State taxes, licenses and fees",
+				"value": "187"
+			  },
+			  {
+				"name": "Dividends to policyholders",
+				"value": "1728"
+			  },
+			  {
+				"name": "Federal income tax (benefit) expense",
+				"value": "-153"
+			  },
+			  {
+				"name": "Net realized capital (losses) gains",
+				"value": "59"
+			  }
+			]
+		  },
+		  "2016": {
+			"Revenue": [
+			  {
+				"name": "Premium Income",
+				"value": "22166"
+			  },
+			  {
+				"name": "Net investment income",
+				"value": "6334"
+			  },
+			  {
+				"name": "Fees and other income",
+				"value": "1283"
+			  }
+			],
+			"Expenses": [
+			  {
+				"name": "Policyholders' benefits",
+				"value": "19046"
+			  },
+			  {
+				"name": "Change in policyholders' reserves",
+				"value": "7387"
+			  },
+			  {
+				"name": "Change in group annuity reserves assumed",
+				"value": "-1510"
+			  },
+			  {
+				"name": "General insurance expenses",
+				"value": "2251"
+			  },
+			  {
+				"name": "Commissions",
+				"value": "938"
+			  },
+			  {
+				"name": "State taxes, licenses and fees",
+				"value": "237"
+			  },
+			  {
+				"name": "Dividends to policyholders",
+				"value": "1566"
+			  },
+			  {
+				"name": "Federal income tax (benefit) expense",
+				"value": "-326"
+			  },
+			  {
+				"name": "Net realized capital (losses) gains",
+				"value": "-208"
+			  }
+			]
+		  }
+		}
+    }
+  ]
+}
+        },
+        function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    });
+});
+</script>
 </head>
 <body>
-<div id="response">
-    <pre></pre>
-</div>
 
-<form id="my-form">
-    <input type="text" id="first-name" name="first-name" placeholder="First Name" />
-    <input type="text" id="last-name" name="last-name" placeholder="Last Name" />
+<button>Send an HTTP POST request to a page and get the result back</button>
 
-    <button type="submit">Submit</button>
-</form>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    (function($){
-        function processForm( e ){
-            $.ajax({
-                url: 'https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv',
-                dataType: 'jsonp',
-                type: 'post',
-                contentType: 'application/json;charset=UTF-8',
-                Authorization: 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJYOEF3R2dQNURqdFZLZWpvQ2JxRWZhSXYiLCJpYXQiOjE1MjgyNzE1NTAsImV4cCI6MTY4NTk1MTU1MCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJvZXUwTmMyaUFqWVoiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.gV3H5CJehqSf_Dk4SRYgOebRmMsYiK3XCVC7tozJX5uOX_F1PdWNBq-Z2R-Bz-D6yTb1MsEEz8U3ok-nbl9cDg',
-                data: $(this).serialize(),
-                success: function( data, textStatus, jQxhr ){
-                    $('#response pre').html( data );
-                },
-                error: function( jqXhr, textStatus, errorThrown ){
-                    console.log( errorThrown );
-                }
-            });
-
-            e.preventDefault();
-        }
-
-        $('#my-form').submit( processForm );
-    })(jQuery);
-</script>
 </body>
 </html>
+
 	
 	
 	
