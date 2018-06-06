@@ -18,7 +18,7 @@ $(document).ready(function(){
   "data":[
     {
       "id":"Primary",
-      "type":"json",
+      "type":"jsonp",
       "jsonData":
 		{
 		  "2015": {
