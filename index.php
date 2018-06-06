@@ -151,7 +151,7 @@ echo($resp);
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-			<?php echo($resp); ?>
+		
         $.post("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv",
         {
 					"Content-Type" : "application/json;charset=UTF-8",
@@ -284,7 +284,7 @@ $(document).ready(function(){
 <body>
 
 <button>Send an HTTP POST request to a page and get the result back</button>
-
+<?php echo($resp); ?>
 </body>
 </html>
 
