@@ -15,7 +15,7 @@ $context = stream_context_create(array(
             array(
                 'auth' => 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI5WFlWWjZLMlNaZ0s4ZFFSSGNWUW01VTkiLCJpYXQiOjE1MjgzMTAwNDQsImV4cCI6MTY4NTk5MDA0NCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJyYnR1Y3JQZUhDc1kiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.PXBnWH7PHl3T8hBHz_SBCBoErvIrHvACJJWg-1wO7ABWfb0Y3b7MAGGK5Cw4K246Oj7yxE5igJlxr5iKuXahlA',
                 'type' => 'json',
-                'data' => utf8_encode('{
+                'data' => '{
 									"month": "August",
 									"year": "2017",
 									"total": 571675,
