@@ -27,7 +27,7 @@
         function processForm( e ){
             $.ajax({
                 url: 'https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv',
-                dataType: 'json',
+                dataType: 'jsonp',
                 type: 'post',
                 contentType: 'application/json;charset=UTF-8',
                 Authorization: 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJYOEF3R2dQNURqdFZLZWpvQ2JxRWZhSXYiLCJpYXQiOjE1MjgyNzE1NTAsImV4cCI6MTY4NTk1MTU1MCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJvZXUwTmMyaUFqWVoiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.gV3H5CJehqSf_Dk4SRYgOebRmMsYiK3XCVC7tozJX5uOX_F1PdWNBq-Z2R-Bz-D6yTb1MsEEz8U3ok-nbl9cDg',
