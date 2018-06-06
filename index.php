@@ -13,7 +13,7 @@ $(document).ready(function(){
     $("button").click(function(){
         $.post("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv",
         {
-            Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJYOEF3R2dQNURqdFZLZWpvQ2JxRWZhSXYiLCJpYXQiOjE1MjgyNzE1NTAsImV4cCI6MTY4NTk1MTU1MCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJvZXUwTmMyaUFqWVoiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.gV3H5CJehqSf_Dk4SRYgOebRmMsYiK3XCVC7tozJX5uOX_F1PdWNBq-Z2R-Bz-D6yTb1MsEEz8U3ok-nbl9cDg",
+            Authorization: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI5WFlWWjZLMlNaZ0s4ZFFSSGNWUW01VTkiLCJpYXQiOjE1MjgzMTAwNDQsImV4cCI6MTY4NTk5MDA0NCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJyYnR1Y3JQZUhDc1kiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.PXBnWH7PHl3T8hBHz_SBCBoErvIrHvACJJWg-1wO7ABWfb0Y3b7MAGGK5Cw4K246Oj7yxE5igJlxr5iKuXahlA",
             data : {
   "data":[
     {
