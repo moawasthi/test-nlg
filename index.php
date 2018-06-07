@@ -29,7 +29,7 @@ $(document).ready(function(){
 }
 
 // and here a call example
-makePostCall("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv", {'city' : 'Tokio'})
+makePostCall("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv")
     .success(function(data){
                console.log(data);
    })
