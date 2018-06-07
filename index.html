@@ -1,47 +1,58 @@
 
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>jQuery AJAX POST Form</title>
-    <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      var url = 'https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv';
+      
+      makePostCall = function (url) { // here the data and url are not hardcoded anymore
+   var json_data = JSON.stringify("" );
+
+    return $.ajax({
+        type: "POST",
+        url: url,
+        data: json_data,
+        dataType: "json",
+        contentType: "application/json;charset=UTF-8"
+        authentication: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJyRDY2VnF6cGRLQzVOaXh6a2JPWUttQlMiLCJpYXQiOjE1MjgzNjAzMjIsImV4cCI6MTY4NjA0MDMyMiwiaXNzIjoiQUxpdGUiLCJzdWIiOiI3RlRpQzJPdUlha20iLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.TYyppdHz6w3HEikX4KgJn9AKWVnWtEIa6VGnQlP6GzUYvI39ONwTQ1sMCFrQWSuGqzAsVWvCzC7X_gDIFLUkRw"
+    });
+}
+
+// and here a call example
+makePostCall("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv", {'city' : 'Tokio'})
+    .success(function(data){
+               console.log(data);
+   })
+    .fail(function(sender, message, details){
+           alert("Sorry, something went wrong!");
+  });
+       
+    });
+});
+</script>
 </head>
 <body>
-    <?php header('Access-Control-Allow-Origin: *');?>
-<div id="response">
-    <pre></pre>
-</div>
 
-<form id="my-form">
-    <input type="text" id="first-name" name="first-name" placeholder="First Name" />
-    <input type="text" id="last-name" name="last-name" placeholder="Last Name" />
-
-    <button type="submit">Submit</button>
-</form>
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    (function($){
-        function processForm( e ){
-            $.ajax({
-                url: 'https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv',
-                dataType: 'json',
-                type: 'post',
-                contentType: 'application/json;charset=UTF-8',
-                Authorization: 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJYOEF3R2dQNURqdFZLZWpvQ2JxRWZhSXYiLCJpYXQiOjE1MjgyNzE1NTAsImV4cCI6MTY4NTk1MTU1MCwiaXNzIjoiQUxpdGUiLCJzdWIiOiJvZXUwTmMyaUFqWVoiLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.gV3H5CJehqSf_Dk4SRYgOebRmMsYiK3XCVC7tozJX5uOX_F1PdWNBq-Z2R-Bz-D6yTb1MsEEz8U3ok-nbl9cDg',
-                data: $(this).serialize(),
-                success: function( data, textStatus, jQxhr ){
-                    $('#response pre').html( data );
-                },
-                error: function( jqXhr, textStatus, errorThrown ){
-                    console.log( errorThrown );
-                }
-            });
-
-            e.preventDefault();
-        }
-
-        $('#my-form').submit( processForm );
-    })(jQuery);
-</script>
+<button>Send an HTTP POST request to a page and get the result back</button>
+<?php echo($resp); ?>
+<?php
+echo "Hello world!";
+?>
 </body>
 </html>
+
+	
+	
+	
+	
+	
+	
+	
+
