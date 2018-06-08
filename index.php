@@ -1,6 +1,3 @@
-
-
-
 <?php
 
 $curl = curl_init();
@@ -135,9 +132,6 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-  echo var_dump($response);
+  echo $response;
 }
 ?>
-
-
-
