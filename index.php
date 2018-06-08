@@ -132,6 +132,7 @@ curl_close($curl);
 if ($err) {
   echo "cURL Error #:" . $err;
 } else {
-  echo $response->result;
+$someObject = json_decode($response);
+  echo $someObject[0]->result; // Access Object data
 }
 ?>
