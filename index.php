@@ -26,43 +26,42 @@ $body = <<<EOT
       "type":"json",
       "jsonData":
       {
-        
-          "dashboards": [
-            {
-              "name": "Sales",
-              "KPI": {
-                "first": "Profit",
-                "second": "Sales",
-                "third": "Quantity",
-                "fourth" : "State"
-              },
-              "Measures" : 
-              {
-                "first" : 100,
-                "second" : 200,
-                "third" : 300,
-                "fourth" : "texas"
-              }
-            },
-            {
-              "name": "Data Quality Dashboard",
-              "KPI": {
-                "first": "data quality",
-                "second": "data quality at previous year",
-                "third": "State",
-                "fourth": "Country"
-              },
-              "Measures" : 
-              {
-                "first" : 100,
-                "second" : 98,
-                "third" : "Ontario",
-                "fourth" : "America"
-              }
-            }
-            
-          ]
-        
+  "dashboards": [
+    {
+      "name": "Sales",
+      "KPI": {
+        "first": "Profit",
+        "second": "Sales",
+        "third": "Quantity",
+        "fourth" : "State"
+      },
+      "Measures" : 
+      {
+        "first" : 100,
+        "second" : 200,
+        "third" : 300,
+        "fourth" : "texas"
+      }
+    },
+    {
+      "name": "Data Quality Dashboard",
+      "KPI": {
+        "first": "data quality",
+        "second": "data quality at previous year",
+        "third": "State",
+        "fourth": "Country"
+      },
+      "Measures" : 
+      {
+        "first" : 100,
+        "second" : 98,
+        "third" : "Ontario",
+        "fourth" : "America"
+      }
+    }
+    
+  ]
+}
 		}
     
 	
