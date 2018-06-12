@@ -10,32 +10,24 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-      var url = 'https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv';
-      
-      makePostCall = function (url) { // here the data and url are not hardcoded anymore
-   var json_data = JSON.stringify("" );
+    GetPythonResponse();
+});
+});
 
-    return $.ajax({
-        type: "POST",
-        url: url,
-        data: json_data,
-        dataType: "json",
-        contentType: "application/json;charset=UTF-8"
-        authentication: "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJyRDY2VnF6cGRLQzVOaXh6a2JPWUttQlMiLCJpYXQiOjE1MjgzNjAzMjIsImV4cCI6MTY4NjA0MDMyMiwiaXNzIjoiQUxpdGUiLCJzdWIiOiI3RlRpQzJPdUlha20iLCJBTGl0ZS5wZXJtIjpbInByczp4OkV4bks4YlF3Sll2Il0sIkFMaXRlLnR0IjoidV9hIn0.TYyppdHz6w3HEikX4KgJn9AKWVnWtEIa6VGnQlP6GzUYvI39ONwTQ1sMCFrQWSuGqzAsVWvCzC7X_gDIFLUkRw"
-    });
-}
+ function GetPythonResponse(){
+            $.ajax({
+                async: false,
+                url: "Python.py",
+                type : 'POST',
+                success: function(data) {
+                   alertDiv.innerHTML = data;
+                   voiceoutput(data);
+                }});
+
+        }
 
 // and here a call example
-makePostCall("https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv", {'city' : 'Tokio'})
-    .success(function(data){
-               console.log(data);
-   })
-    .fail(function(sender, message, details){
-           alert("Sorry, something went wrong!");
-  });
-       
-    });
-});
+
 </script>
 </head>
 <body>
