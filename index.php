@@ -82,5 +82,4 @@ if ($err) {
 $someObject = json_decode($response);
   echo $someObject[0]->result; // Access Object data
 }
-header( 'Location: index.html');
 ?>
