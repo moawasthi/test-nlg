@@ -1,7 +1,7 @@
 <?php
 
 $curl = curl_init();
-$command= escapeshellcmd('sudo -u www -data python.py');
+$command= escapeshellcmd('sudo -u www -data Python.py');
 $output = shell_exec($command);
 echo $output;
 curl_setopt_array($curl, array(
