@@ -37,9 +37,9 @@ class Derive_Stats:
         
         #return output
         s=json.dumps(output)
-        #return s
-        with open("testoutput.json",'w') as f:
-            f.write(s + "\n")
+        return s
+        #with open("testoutput.json",'w') as f:
+         #   f.write(s + "\n")
         
 
 
