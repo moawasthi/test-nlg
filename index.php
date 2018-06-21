@@ -1,7 +1,7 @@
 <?php
 
 $curl = curl_init();
-$command= $command = escapeshellcmd('Python.py');
+$command= escapeshellcmd('Python.py');
 $output = shell_exec($command);
 echo $output;
 curl_setopt_array($curl, array(
