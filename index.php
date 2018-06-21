@@ -1,7 +1,7 @@
 <?php
 
 $curl = curl_init();
-$command= escapeshellcmd('Python.py');
+$command= escapeshellcmd('derive_stats');
 $output = shell_exec($command);
 $resultArray = json_decode($output);
 echo $result;
