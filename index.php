@@ -4,7 +4,6 @@ $curl = curl_init();
 $command= escapeshellcmd('python3 derive_stats.py');
 $output = shell_exec($command);
 $resultArray = json_decode($output);
-echo $result;
 echo $resultArray;
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "443",
