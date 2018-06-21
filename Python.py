@@ -1,1 +1,1 @@
-print('Hello, world!')
+return json_dumps('Hello, world!')
