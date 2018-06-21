@@ -20,7 +20,7 @@ class Derive_Stats:
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
-            if not isinstance(i.get('SUM(Profit)'), int) 
+            if not isinstance(i.get('SUM(Profit)'), int): 
             
                 self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
         
