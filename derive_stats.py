@@ -25,9 +25,9 @@ class Derive_Stats:
                 self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
             else :
                 self.list_of_sum_profit.append(int(i.get('SUM(Profit)')
-            max1=max(self.list_of_sum_profit)
-        min1=min(self.list_of_sum_profit)
-        median1=np.median(self.list_of_sum_profit)
+                max1=max(self.list_of_sum_profit)
+                min1=min(self.list_of_sum_profit)
+                median1=np.median(self.list_of_sum_profit)
         """
         output=[{self.list_of_sub_category[self.list_of_sum_profit.index(max1)]:self.list_actual[self.list_of_sum_profit.index(max1)],
                 self.list_of_sub_category[self.list_of_sum_profit.index(min1)]: self.list_actual[self.list_of_sum_profit.index(min1)],
