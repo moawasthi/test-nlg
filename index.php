@@ -1,7 +1,7 @@
 <?php
 
 $curl = curl_init();
-$command= escapeshellcmd('sudo -u www -data derive_stats.py');
+$command= escapeshellcmd('python derive_stats.py');
 $output = shell_exec($command);
 $resultArray = json_decode($output);
 echo $result;
