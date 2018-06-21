@@ -20,7 +20,9 @@ class Derive_Stats:
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
-            self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
+            if(!isinstance(i.get('SUM(Profit)'), int) )
+            
+                self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
         
         max1=max(self.list_of_sum_profit)
         min1=min(self.list_of_sum_profit)
