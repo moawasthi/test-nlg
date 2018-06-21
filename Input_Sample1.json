@@ -1,0 +1,39 @@
+[
+{"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390, "SUM(Sales)": 60894},
+
+{"Sub-Category": "Supplies", "SUM(Profit)": -955, "SUM(Quantity)": 192, "SUM(Sales)": 16049},
+
+{"Sub-Category": "Storage", "SUM(Profit)": 7368, "SUM(Quantity)": 1026, "SUM(Sales)": 69834},
+
+{"Sub-Category": "Phones", "SUM(Profit)": 12872, "SUM(Quantity)": 1093, "SUM(Sales)": 105643},
+
+{"Sub-Category": "Paper", "SUM(Profit)": 12049, "SUM(Quantity)": 1707, "SUM(Sales)": 27718},
+
+{"Sub-Category": "Machines", "SUM(Profit)": -2869, "SUM(Quantity)": 121, "SUM(Sales)": 43545},
+
+{"Sub-Category": "Labels", "SUM(Profit)": 1745, "SUM(Quantity)": 448, "SUM(Sales)": 3861},
+
+{"Sub-Category": "Furnishings", "SUM(Profit)": 4099, "SUM(Quantity)": 1097, "SUM(Sales)": 28915},
+
+{"Sub-Category": "Fasteners", "SUM(Profit)": 305, "SUM(Quantity)": 249, "SUM(Sales)": 858},
+
+{"Sub-Category": "Envelopes", "SUM(Profit)": 1442, "SUM(Quantity)": 241, "SUM(Sales)": 3379},
+
+{"Sub-Category": "Copiers", "SUM(Profit)": 25032, "SUM(Quantity)": 73, "SUM(Sales)": 62899},
+
+{"Sub-Category": "Chairs", "SUM(Profit)": 7644, "SUM(Quantity)": 674, "SUM(Sales)": 95554},
+
+{"Sub-Category": "Bookcases", "SUM(Profit)": -584, "SUM(Quantity)": 276, "SUM(Sales)": 30024},
+
+
+{"Sub-Category": "Binders", "SUM(Profit)": 7737, "SUM(Quantity)": 2077, "SUM(Sales)": 72986},
+
+
+{"Sub-Category": "Art", "SUM(Profit)": 2227, "SUM(Quantity)": 1106, "SUM(Sales)": 8914},
+
+
+{"Sub-Category": "Appliances", "SUM(Profit)": 7865, "SUM(Quantity)": 654, "SUM(Sales)": 42927},
+
+
+{"Sub-Category": "Accessories", "SUM(Profit)": 15672, "SUM(Quantity)": 1079, "SUM(Sales)": 59946}
+]

@@ -1,0 +1,47 @@
+{
+"AGG(Dllr_Sls_chg_py_kpi1)"
+:
+"▲",
+"AGG(Dlr Sls % Change)"
+:
+"0.09%",
+"AGG(Rank for Competitors)"
+:
+"1",
+"AGG(`Calc - Dllr Sls Chg Py)"
+:
+"+0.0",
+"Brand Name"
+:
+"Brand 1",
+"IN/OUT(Brand Set)"
+:
+"Out",
+"SUM(Dllr Shr Amnt)"
+:
+"16.3600",
+"SUM(Dllr Sls Amnt (tooltip))"
+:
+"$10,890,730",
+"SUM(Dllr Sls Amnt)"
+:
+"$10,890,730",
+"SUM(Dllr Sls Chg Py)"
+:
+"$11,686",
+"SUM(Dummy)"
+:
+"0",
+"SUM(`Sls Amnt YAG)"
+:
+"10,879,044.00",
+"SUM(`Tooltip - Dllr Sls Amnt)"
+:
+"10,890,730.00",
+"SUM(`Tooltip - Dllr Sls Chg Py)"
+:
+"11,686.00",
+"Share"
+:
+"Share"
+}

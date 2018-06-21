@@ -1,0 +1,18 @@
+[
+{"DAY(Order Date)":"January 1, 2014","Measure Names":"Sales","Measure Values":"731.77"},
+{"DAY(Order Date)": "January 2, 2014", "Measure Names": "Sales", "Measure Values": "1481.83"},
+
+{"DAY(Order Date)": "January 3, 2014", "Measure Names": "Sales", "Measure Values": "2079.55"},
+
+{"DAY(Order Date)": "January 4, 2014", "Measure Names": "Sales", "Measure Values": "2070.27"},
+{"DAY(Order Date)": "January 7, 2014", "Measure Names": "Sales", "Measure Values": "33.74"},
+
+
+{"DAY(Order Date)": "January 8, 2014", "Measure Names": "Sales", "Measure Values": "3395.59"},
+
+{"DAY(Order Date)": "January 9, 2014", "Measure Names": "Sales", "Measure Values": "892.98"},
+
+{"DAY(Order Date)": "January 10, 2014", "Measure Names": "Sales", "Measure Values": "274.49"},
+
+{"DAY(Order Date)": "January 13, 2014", "Measure Names": "Sales", "Measure Values": "848.52"}
+]

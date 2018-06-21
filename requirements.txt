@@ -1,1 +1,5 @@
 lxml==3.6.4
+csv
+json
+pandas
+numpy
