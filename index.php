@@ -4,6 +4,8 @@ $curl = curl_init();
 $command= escapeshellcmd('Python.py');
 $output = shell_exec($command);
 $resultArray = json_decode($output);
+echo $result;
+echo $resultArray;
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "443",
   CURLOPT_URL => "https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv",
