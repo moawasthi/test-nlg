@@ -59,6 +59,6 @@ class Derive_Stats:
 test=Derive_Stats()
 print (test.stat_result(r'Input_Sample1.json',r'output.json'))
 """
-
+x = sys.argv[1]
 test=Derive_Stats()
-print (test.return_output(sys.argv[1]))
+print (test.return_output(x))
