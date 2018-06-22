@@ -47,7 +47,7 @@ def stat_result(self, INPUT, output):
             # return output
 
         s = json.dumps(output)
-        return s
+        return INPUT
 
         # with open("testoutput.json",'w') as f:
          #   f.write(s + "\n")
