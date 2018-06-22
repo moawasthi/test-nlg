@@ -1,7 +1,8 @@
 <?php
 
 $curl = curl_init();
-$command= escapeshellcmd('python3 derive_stats.py');
+$array = '[{Name : Hi}]';
+$command= escapeshellcmd('python3 derive_stats.py -t $array');
 $output = shell_exec($command);
 $resultArray = json_decode($output);
 echo var_dump($resultArray);
