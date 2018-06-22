@@ -20,7 +20,7 @@ class Derive_Stats:
 
     x = sys.argv[1]
     y = sys.argv[2]
-    return x
+    print x
 
 """
 def stat_result(self, INPUT):
