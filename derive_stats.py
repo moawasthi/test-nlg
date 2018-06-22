@@ -19,7 +19,6 @@ class Derive_Stats:
     list_actual = []
 
     x = sys.argv[1]
-    y = sys.argv[2]
     print(x)
 
 """
