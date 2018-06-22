@@ -3,6 +3,7 @@
 
 import re
 import json
+import sys
 import numpy as np
 import os
 
@@ -17,7 +18,7 @@ class Derive_Stats:
     list_of_sum_profit = []
     list_actual = []
     count = 0
-    
+
 
 
 for arg in sys.argv:
