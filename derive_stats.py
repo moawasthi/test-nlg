@@ -15,7 +15,7 @@ class Derive_Stats:
     list_actual=[]
     def return_output(self,x):
         output={"dashboards":[{"name" : x }]}
-        return x
+        return output
         
 
     def stat_result(self,input,output):
