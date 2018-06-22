@@ -16,6 +16,8 @@ class Derive_Stats:
     list_of_sub_category = []
     list_of_sum_profit = []
     list_actual = []
+    count = 0
+    
 
 
 for arg in sys.argv:
