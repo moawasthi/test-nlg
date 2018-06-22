@@ -17,12 +17,13 @@ class Derive_Stats:
     list_of_sub_category = []
     list_of_sum_profit = []
     list_actual = []
-    count = 0
+    
 
 
 
 for arg in sys.argv:
     if arg == '-t':
+        count = 0
         INPUT = sys.argv[count + 1]  # News header
         count += 1
 
