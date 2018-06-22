@@ -28,7 +28,7 @@ for arg in sys.argv:
         count += 1
 
 
-def stat_result(self, INPUT, output):
+def stat_result(self, INPUT):
 
             # self.input_file=open(input,'r')
             # self.output_file=open(output,'wb')
@@ -70,4 +70,4 @@ def stat_result(self, INPUT, output):
 
 
 test = Derive_Stats()
-test.stat_result(INPUT, r'output.json')
+#test.stat_result(INPUT)
