@@ -17,7 +17,7 @@ class Derive_Stats:
         output={"dashboards":[{"name" : x }]}
         return output
         
-
+"""
     def stat_result(self,input,output):
         self.input_file=open(input,'r')
         self.output_file=open(output,'wb')
