@@ -14,9 +14,10 @@ class Derive_Stats:
     list_of_sum_profit=[]
     list_actual=[]
     def return_output(self,x):
+        output={"dashboards":[{"name" : x }]}
         return x
         
-"""
+
     def stat_result(self,input,output):
         self.input_file=open(input,'r')
         self.output_file=open(output,'wb')
