@@ -13,7 +13,7 @@ class Derive_Stats:
     list_of_sub_category=[]
     list_of_sum_profit=[]
     list_actual=[]
-    def return_output(x):
+    def return_output(self,x):
         return x
         
 """
