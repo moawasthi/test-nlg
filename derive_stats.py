@@ -17,17 +17,12 @@ class Derive_Stats:
     list_of_sub_category = []
     list_of_sum_profit = []
     list_actual = []
-    
 
+    x = sys.argv[1]
+    y = sys.argv[2]
+    return x
 
-
-for arg in sys.argv:
-    if arg == '-t':
-        count = 0
-        INPUT = sys.argv[count + 1]  # News header
-        count += 1
-
-
+"""
 def stat_result(self, INPUT):
 
             # self.input_file=open(input,'r')
@@ -71,3 +66,4 @@ def stat_result(self, INPUT):
 
 test = Derive_Stats()
 #test.stat_result(INPUT)
+"""
