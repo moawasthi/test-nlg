@@ -19,7 +19,7 @@ class Derive_Stats:
     list_actual = []
 
     x = sys.argv[1]
-def return_output(x)
+def return_output(x):
     return x
 test = Derive_Stats()
 test.return_output(x)
