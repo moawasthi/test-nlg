@@ -6,7 +6,7 @@ $arraytoPass = base64_encode(json_encode($array));
 $command= "python3 derive_stats.py $arraytoPass";
 $output = shell_exec($command);
 echo $output;
-$resultArray = base64_decode(json_decode($output));
+$resultArray = json_decode($output);
 echo var_dump($resultArray);
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "443",
