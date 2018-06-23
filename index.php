@@ -5,7 +5,6 @@ $array = '[{"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390
 $arraytoPass = base64_encode(json_encode($array));
 $command= "python3 derive_stats.py $arraytoPass";
 $output = shell_exec($command);
-echo base64_decode($output);
 echo $output;
 $resultArray = base64_decode(json_decode($output));
 echo var_dump($resultArray);
