@@ -13,14 +13,17 @@ class Derive_Stats:
     list_of_sub_category=[]
     list_of_sum_profit=[]
     list_actual=[]
+    def return_output(self,x):
+        output={"dashboards":[{"name" : x }]}
+        json_data=json.loads(x)
+        return x
         
+"""
     def stat_result(self,input,output):
         self.input_file=open(input,'r')
         self.output_file=open(output,'wb')
-        data = input
+        data = self.input_file.read()
         json_data=json.loads(data)
-        print data
-        print json_data
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
@@ -53,12 +56,11 @@ class Derive_Stats:
 
 
 
-x = sys.argv[1]
+
 
 test=Derive_Stats()
-print (test.stat_result(x,r'output.json'))
+print (test.stat_result(r'Input_Sample1.json',r'output.json'))
 """
-
+x = sys.argv[1]
 test=Derive_Stats()
 print (test.return_output(x))
-"""
