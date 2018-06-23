@@ -21,7 +21,27 @@ class Derive_Stats:
         json_data = json.loads(base64.b64decode(sys.argv[1]))
         #json_data = json.loads(sys.argv[1])
         json_decoded = json.loads(json_data)
-        return json_decoded
+         for i in json_decoded:
+            self.list_of_sub_category.append(i.get('Sub-Category'))
+            self.list_actual.append(i.get('SUM(Profit)'))
+            if not isinstance(i.get('SUM(Profit)'), int): 
+            
+                self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
+            else :
+                self.list_of_sum_profit.append(int(i.get('SUM(Profit)')))
+                max1=max(self.list_of_sum_profit)
+                min1=min(self.list_of_sum_profit)
+                median1=np.median(self.list_of_sum_profit)
+        """
+        output=[{self.list_of_sub_category[self.list_of_sum_profit.index(max1)]:self.list_actual[self.list_of_sum_profit.index(max1)],
+                self.list_of_sub_category[self.list_of_sum_profit.index(min1)]: self.list_actual[self.list_of_sum_profit.index(min1)],
+                'median':median1}]
+        """
+
+        output={"dashboards":[{"name": "Sales","KPI": {"first":self.list_of_sub_category[self.list_of_sum_profit.index(max1)],"second":self.list_of_sub_category[self.list_of_sum_profit.index(min1)],"third":"median"},"Measures" :{"first" :self.list_actual[self.list_of_sum_profit.index(max1)],"second" :self.list_actual[self.list_of_sum_profit.index(min1)],"third" : median1}}]}
+        #self.output_file = open(self.output_file, "wb", encoding="utf8")
+        #self.output_file.write(json.dumps(output))
+        return output
             #return json_data[0]
         """
         for i in json_data:
