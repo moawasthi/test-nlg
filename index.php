@@ -1,10 +1,7 @@
 <?php
 
 $curl = curl_init();
-$array = '[
-  {"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390, "SUM(Sales)": 60894},
-  
-  {"Sub-Category": "Supplies", "SUM(Profit)": -955, "SUM(Quantity)": 192, "SUM(Sales)": 16049}]';
+$array = '[{"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390, "SUM(Sales)": 60894},{"Sub-Category": "Supplies", "SUM(Profit)": -955, "SUM(Quantity)": 192, "SUM(Sales)": 16049}]';
 $command= "python3 derive_stats.py $array";
 $output = shell_exec($command);
 echo $output;
