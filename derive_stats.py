@@ -22,7 +22,7 @@ class Derive_Stats:
         #json_data = json.loads(sys.argv[1])
         json_decoded = json.loads(json_data)
         measure = base64.b64decode(sys.argv[2])
-        measure_decoded = base64.b64decode(measure)
+        measure_decoded = measure.decode('ascii')
         measure_Norm = 'SUM(Profit)'
         dimension = base64.b64decode(sys.argv[3])
         for i in json_decoded:
