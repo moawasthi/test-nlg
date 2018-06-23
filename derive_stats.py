@@ -20,7 +20,7 @@ class Derive_Stats:
         data = self.input_file.read()
         json_data = json.loads(base64.b64decode(sys.argv[1]))
         for i in json_data:
-            return self.list_of_sub_category.append(i)
+            return i
         """
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
