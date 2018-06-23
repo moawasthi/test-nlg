@@ -14,6 +14,7 @@ class Derive_Stats:
     list_of_sub_category=[]
     list_of_sum_profit=[]
     list_actual=[]
+    """
     def return_output(self,x):
         json_data = json.loads(base64.b64decode(sys.argv[1]))
         for i in json_data:
@@ -44,7 +45,7 @@ class Derive_Stats:
         self.input_file=open(input,'r')
         self.output_file=open(output,'wb')
         data = self.input_file.read()
-        json_data=json.loads(data)
+        json_data = json.loads(base64.b64decode(sys.argv[1]))
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
@@ -85,3 +86,4 @@ print (test.stat_result(r'Input_Sample1.json',r'output.json'))
 x = sys.argv[1]
 test=Derive_Stats()
 print (test.return_output(x))
+"""
