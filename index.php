@@ -4,7 +4,7 @@ $curl = curl_init();
 $array = '[{"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390, "SUM(Sales)": 60894},{"Sub-Category": "Supplies", "SUM(Profit)": -955, "SUM(Quantity)": 192, "SUM(Sales)": 16049}]';
 $arraytoPass = base64_encode(json_encode($array));
 $measure = base64_encode(json_encode("SUM(Profit)"));
-$dimension = base64_encode(json_encode("Sub-Category");
+$dimension = base64_encode(json_encode("Sub-Category"));
 $command= "python3 derive_stats.py $arraytoPass $measure $dimension";
 $output = shell_exec($command);
 echo $output;
