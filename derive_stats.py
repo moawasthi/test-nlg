@@ -22,6 +22,7 @@ class Derive_Stats:
         #json_data = json.loads(sys.argv[1])
         json_decoded = json.loads(json_data)
         measure = base64.b64decode(sys.argv[2])
+        measure_decoded = base64.b64decode(measure)
         measure_Norm = 'SUM(Profit)'
         dimension = base64.b64decode(sys.argv[3])
         for i in json_decoded:
@@ -37,7 +38,7 @@ class Derive_Stats:
                 median1=np.median(self.list_of_sum_profit)
 
         output={"dashboards":[{"name": "Sales","KPI": {"first":self.list_of_sub_category[self.list_of_sum_profit.index(max1)],"second":self.list_of_sub_category[self.list_of_sum_profit.index(min1)],"third":"median"},"Measures" :{"first" :self.list_actual[self.list_of_sum_profit.index(max1)],"second" :self.list_actual[self.list_of_sum_profit.index(min1)],"third" : median1}}]}
-        return measure_Norm
+        return measure_decoded
             #return json_data[0]
        
 test=Derive_Stats()
