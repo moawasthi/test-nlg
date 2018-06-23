@@ -1,15 +1,12 @@
 <?php
 
 $curl = curl_init();
-$array = '[{"Name" : "Hi"}]';
-$result = json_decode($array);
-$param1 =  $result[0]->Name;
-$command= "python3 derive_stats.py '{$param1}'";
+$array = '[{"Name" : "Hi"}, {"Age" : 21}]';
+$command= "python3 derive_stats.py $array";
+$command= "python3 derive_stats.py {$param1}";
 $output = shell_exec($command);
 $resultArray = json_decode($output);
 echo var_dump($resultArray);
-echo $param1;
-echo $command;
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "443",
   CURLOPT_URL => "https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv",

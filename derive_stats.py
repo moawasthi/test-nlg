@@ -62,4 +62,5 @@ print (test.stat_result(r'Input_Sample1.json',r'output.json'))
 """
 x = sys.argv[1]
 test=Derive_Stats()
+print(x)
 print (test.return_output(x))
