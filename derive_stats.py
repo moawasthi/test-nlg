@@ -21,7 +21,7 @@ class Derive_Stats:
         json_data = json.loads(base64.b64decode(sys.argv[1]))
         #json_data = json.loads(sys.argv[1])
         json_decoded = json.loads(json_data)
-        measure = base64.b64decode(sys.argv[2])
+        measure = sys.argv[2]
         for i in json_decoded:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
