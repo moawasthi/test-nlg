@@ -23,7 +23,7 @@ class Derive_Stats:
             
                 self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
             else :
-                self.list_of_sum_profit.append(int(i.get('SUM(Profit)'))
+                self.list_of_sum_profit.append(int(i.get('SUM(Profit)')))
                 max1=max(self.list_of_sum_profit)
                 min1=min(self.list_of_sum_profit)
                 median1=np.median(self.list_of_sum_profit)
