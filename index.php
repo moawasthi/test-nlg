@@ -3,6 +3,7 @@
 $curl = curl_init();
 $array = '[{"Name" : "Hi"}]';
 $result = json_decode($array);
+echo $result[0]->Name;
 $command= escapeshellcmd("python3 derive_stats.py  '$result[0]->Name'");
 $output = shell_exec($command);
 $resultArray = json_decode($output);
