@@ -19,6 +19,7 @@ class Derive_Stats:
         self.output_file=open(output,'wb')
         data = self.input_file.read()
         json_data = json.loads(base64.b64decode(sys.argv[1]))
+        """
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
@@ -39,10 +40,10 @@ class Derive_Stats:
         output={"dashboards":[{"name": "Sales","KPI": {"first":self.list_of_sub_category[self.list_of_sum_profit.index(max1)],"second":self.list_of_sub_category[self.list_of_sum_profit.index(min1)],"third":"median"},"Measures" :{"first" :self.list_actual[self.list_of_sum_profit.index(max1)],"second" :self.list_actual[self.list_of_sum_profit.index(min1)],"third" : median1}}]}
         #self.output_file = open(self.output_file, "wb", encoding="utf8")
         #self.output_file.write(json.dumps(output))
-        
+        """
         #return output
-        s=json.dumps(output)
-        return s
+        #s=json.dumps(output)
+        return json_data
         #with open("testoutput.json",'w') as f:
          #   f.write(s + "\n")
         
