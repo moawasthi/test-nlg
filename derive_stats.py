@@ -15,7 +15,7 @@ class Derive_Stats:
     list_actual=[]
     def return_output(self,x):
         output={"dashboards":[{"name" : x }]}
-        json_data=json.loads(x)
+        #json_data=json.loads(x)
         return x
         
 """
