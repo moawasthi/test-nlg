@@ -38,7 +38,7 @@ class Derive_Stats:
                 median1=np.median(self.list_of_sum_profit)
 
         output={"dashboards":[{"name": "Sales","KPI": {"first":self.list_of_sub_category[self.list_of_sum_profit.index(max1)],"second":self.list_of_sub_category[self.list_of_sum_profit.index(min1)],"third":"median"},"Measures" :{"first" :self.list_actual[self.list_of_sum_profit.index(max1)],"second" :self.list_actual[self.list_of_sum_profit.index(min1)],"third" : median1}}]}
-        s = json_dumps(output)
+        s = json.dumps(output)
         return s
             #return json_data[0]
        
