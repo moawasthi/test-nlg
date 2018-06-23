@@ -3,8 +3,8 @@
 $curl = curl_init();
 $array = '[{"Name" : "Hi"}, {"Age" : 21}]';
 $command= "python3 derive_stats.py $array";
-$command= "python3 derive_stats.py {$param1}";
 $output = shell_exec($command);
+echo $output;
 $resultArray = json_decode($output);
 echo var_dump($resultArray);
 curl_setopt_array($curl, array(
