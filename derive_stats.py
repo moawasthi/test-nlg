@@ -26,7 +26,7 @@ class Derive_Stats:
         dimension = base64.b64decode(sys.argv[3])
         for i in json_decoded:
             self.list_of_sub_category.append(i.get('Sub-Category'))
-            self.list_actual.append(i.get('SUM(Profit)'))
+            self.list_actual.append(i.get(measure_Norm))
             if not isinstance(i.get('SUM(Profit)'), int): 
             
                 self.list_of_sum_profit.append(int(i.get('SUM(Profit)').replace('$','').replace(',','')))
