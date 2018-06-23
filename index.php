@@ -3,14 +3,15 @@
 $curl = curl_init();
 $array = '[{"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390, "SUM(Sales)": 60894},{"Sub-Category": "Supplies", "SUM(Profit)": -955, "SUM(Quantity)": 192, "SUM(Sales)": 16049}]';
 $arraytoPass = base64_encode(json_encode($array));
-$measure = base64_encode("SUM(Profit)");
+$measure = base64_encode("SUM(Sales)");
 $dimension = base64_encode("Sub-Category");
 $command= "python3 derive_stats.py $arraytoPass $measure $dimension";
 $output = shell_exec($command);
 echo $output;
 $resultArray = json_decode($output);
-echo var_dump($resultArray);
 echo $resultArray->dashboards[0]->KPI->first;
+echo $resultArray->dashboards[0]->Measures->first;
+echo $resultArray->dashboards[0]->Measures->second;
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "443",
   CURLOPT_URL => "https://app.studio.arria.com:443/alite_content_generation_webapp/text/ExnK8bQwJYv",
