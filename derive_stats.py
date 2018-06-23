@@ -1,5 +1,6 @@
 import re
 import json
+import base64
 import numpy as np
 import os
 import sys
@@ -14,9 +15,10 @@ class Derive_Stats:
     list_of_sum_profit=[]
     list_actual=[]
     def return_output(self,x):
+        content = json.loads(base64.b64decode(sys.argv[1]))
         output={"dashboards":[{"name" : x }]}
         #json_data=json.loads(x)
-        return x
+        return content
         
 """
     def stat_result(self,input,output):

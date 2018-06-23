@@ -2,7 +2,8 @@
 
 $curl = curl_init();
 $array = '[{"Sub-Category": "Tables", "SUM(Profit)": -8141, "SUM(Quantity)": 390, "SUM(Sales)": 60894},{"Sub-Category": "Supplies", "SUM(Profit)": -955, "SUM(Quantity)": 192, "SUM(Sales)": 16049}]';
-$command= "python3 derive_stats.py $array";
+$arraytoPass = base64_encode(json_encode($array));
+$command= "python3 derive_stats.py $arraytoPass";
 $output = shell_exec($command);
 echo $output;
 $resultArray = json_decode($output);
