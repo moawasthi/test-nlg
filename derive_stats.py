@@ -20,7 +20,8 @@ class Derive_Stats:
         data = self.input_file.read()
         json_data = json.loads(base64.b64decode(sys.argv[1]))
         #json_data = json.loads(sys.argv[1])
-        return json_data
+        json_decoded = json.loads(json_data)
+        return json_decoded
             #return json_data[0]
         """
         for i in json_data:
