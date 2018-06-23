@@ -19,6 +19,8 @@ class Derive_Stats:
         self.output_file=open(output,'wb')
         data = input
         json_data=json.loads(data)
+        print data
+        print json_data
         for i in json_data:
             self.list_of_sub_category.append(i.get('Sub-Category'))
             self.list_actual.append(i.get('SUM(Profit)'))
